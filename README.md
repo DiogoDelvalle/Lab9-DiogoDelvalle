@@ -16,3 +16,7 @@ Implementé un "Custom Hook" llamado useLocalStorage que:
     -Guarda los datos en localStorage.
     -Recupera los datos al iniciar la app.
     -Usa useEffect para sincronizar los cambios.
+
+### Ejemplo de uso:
+```tsx
+const [tasks, setTasks] = useLocalStorage<Task[]>('tasks', [])
